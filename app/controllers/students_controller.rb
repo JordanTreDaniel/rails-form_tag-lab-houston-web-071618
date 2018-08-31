@@ -12,7 +12,8 @@ class StudentsController < ApplicationController
   end
 
   def create
-
+    @params_hash = params
+    render :'/students/show'
   end
 
 end
